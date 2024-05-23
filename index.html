@@ -5,51 +5,90 @@
     /* Add your CSS here */
 
     /* basic selectors */
-    *{
+    * {
       background-color: lightgray;
     }
 
     div {
       font-size: 18px;
-      font-weight: 400px;
+      font-weight: 400;
     }
 
     li {
       font-size: 14px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif; 
-
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    .highlight{
+    .highlight {
       background-color: yellow;
     }
 
-    #main-span{
-      color:blue
+    #main-span {
+      color: blue;
     } 
 
-  span b{
-    background-color: green;
-  } 
+    /* Exercise 1: Advanced Selectors */
+    div span b {
+      color: purple;
+    }
 
-  ul li:nth-child(even){
-    background-color: :lightblue
+    ul > li {
+      font-weight: bold;
+    }
 
-  }
+    /* Exercise 2: Sibling and Attribute Selectors */
+    ul ~ a {
+      color: green;
+    }
 
-  li[data-info="special"]{
-    font-style:italic;
-  
-  }
+    input[type="checkbox"]:checked {
+      background-color: yellow;
+    }
 
-  li:hover {
-    background-color: rgb(red, green, blue);
+    /* Exercise 3: Pseudo-classes for Forms */
+    input:focus {
+      border: 2px solid red;
+    }
 
-  }
+    input:disabled {
+      background-color: grey;
+      color: white;
+    }
 
-  li::first
+    /* Exercise 4: Structural Pseudo-classes */
+    ul li:first-child {
+      background-color: blue;
+    }
 
+    a:last-of-type {
+      text-decoration: underline;
+    }
 
+    /* Exercise 5: Combinatorial Selectors */
+    ul li:not(:first-child) {
+      color: orange;
+    }
+
+    input[type="text"][required] {
+      box-shadow: 1px 1px 5px black;
+    }
+
+    /* Existing CSS */
+    span b {
+      background-color: green;
+    }
+
+    ul li:nth-child(even) {
+      background-color: lightblue;
+    }
+
+    li[data-info="special"] {
+      font-style: italic;
+    }
+
+    li:hover {
+      background-color: rgb(red, green, blue);
+    }
   </style>
 </head>
 <body>
