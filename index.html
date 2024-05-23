@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-       /* Add your CSS here */
+<head>
+  <style>
+    /* Add your CSS here */
 
-      /* Basic Selectors */
-      .p {
-        background-color: rgb(54, 134, 209);
-      }
-      div {
-        font-size: 18px;
-        font-weight: 400;
-      }
-      li {
+    /* basic selectors */
+    *{
+      background-color: lightgray;
+    }
 
-            font-size: 14px;
-            font-family: Verdana, Geneva, Tahoma,
-            sans-serif;
-      }
-      .highlight{
-        background-color: yellow;
-      }
-      #main-span {
-        color: blue;
-      }
-    </style>
-  </head>
-  <body>
-    <div>This is a div</div>
-    <span>This is a span</span>
-    <div>This is a div</div>
+    div {
+      font-size: 18px;
+      font-weight: 400px;
+    }
+
+    li {
+      font-size: 14px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; 
+
+    }
+
+    .highlight{
+      background-color: yellow;
+    }
+
+    #main-span{
+      color:blue
+    } 
+
+  span b{
+    background-color: green;
+  } 
+
+  ul li:nth-child(even){
+    background-color: :lightblue
+
+  }
+
+  li[data-info="special"]{
+    font-style:italic;
+  
+  }
+
+  li:hover {
+    background-color: rgb(red, green, blue);
+
+  }
+
+  li::first
+
+
+  </style>
+</head>
+<body>
+  <div>This is a div</div>
+  <div class="box">This div has a class "box"</div>
+  <span>This is a span</span>
+  <button>Click me</button>
+  <input type="text" required>
+  <input type="checkbox" checked>
+  <input type="radio" disabled>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <div>
     <span>
-      <b>Nested text goes here</b>
+      <b>nested text</b>
     </span>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-      <li>Item 5</li>
-    </ul>
-  </body>
+  </div>
+</body>
 </html>
